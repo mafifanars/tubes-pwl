@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage\index');
-});
+//Homepage
+Route::get('/', function () {return view('homepage\index');});

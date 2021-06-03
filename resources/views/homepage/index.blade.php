@@ -1,54 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Home | Triangle</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/animate.min.css" rel="stylesheet"> 
-    <link href="css/lightbox.css" rel="stylesheet"> 
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/responsive.css" rel="stylesheet">
+@include('homepage.layout.head')
 
-    <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
-</head><!--/head-->
-
-<body>
-	@include('layout.navbar')
-    <!--/#header-->
+@include('homepage.layout.header')
 
     <section id="home-slider">
         <div class="container">
-            <div class="main-slider">
-                <div class="slide-text">
-                    <h1>We Are Creative Nerds</h1>
-                    <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                    <a href="#" class="btn btn-common">SIGN UP</a>
+            <div class="row">
+                <div class="main-slider">
+                    <div class="slide-text">
+                        <h1>We Are Creative Nerds</h1>
+                        <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
+                        <a href="#action" class="btn btn-common">SIGN UP</a>
+                    </div>
+                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
+                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
+                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
+                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
+                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
                 </div>
-                <img src="images/home/slider/slide1/house.png" class="img-responsive slider-house" alt="slider image">
-                <img src="images/home/slider/slide1/circle1.png" class="slider-circle1" alt="slider image">
-                <img src="images/home/slider/slide1/circle2.png" class="slider-circle2" alt="slider image">
-                <img src="images/home/slider/slide1/cloud1.png" class="slider-cloud1" alt="slider image">
-                <img src="images/home/slider/slide1/cloud2.png" class="slider-cloud2" alt="slider image">
-                <img src="images/home/slider/slide1/cloud3.png" class="slider-cloud3" alt="slider image">
-                <img src="images/home/slider/slide1/sun.png" class="slider-sun" alt="slider image">
-                <img src="images/home/cycle.png" class="slider-cycle" alt="">
             </div>
         </div>
         <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
     </section>
     <!--/#home-slider-->
+
+    {{--<section id="action">
+        <div class="vertical-center">
+             <div class="container">
+                <div class="row">
+                    <div class="action count">
+                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h1 class="timer bold" data-to="150" data-speed="3000" data-from="0"></h1>   
+                            <h3>Guru Terdaftar</h3>
+                        </div>
+                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h1 class="timer bold" data-to="1500" data-speed="3000" data-from="0"></h1>   
+                            <h3>Siswa Terdaftar</h3> 
+                        </div>
+                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h1 class="timer bold" data-to="4" data-speed="3000" data-from="0"></h1> 
+                            <h3>Jurusan</h3>
+                        </div>
+                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <h1 class="timer bold" data-to="1" data-speed="3000" data-from="0"></h1> 
+                            <h3>Almamater</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+    <!--/#action-->--}}
 
     <section id="services">
         <div class="container">
@@ -176,13 +177,7 @@
      </section>
     <!--/#clients-->
 
-    @include('layout.footer')
-    <!--/#footer-->
+@include('homepage.layout.foot')
 
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/lightbox.min.js"></script>
-    <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
-</body>
-</html>
+@include('homepage.layout.footer')
+ 

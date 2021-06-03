@@ -1,5 +1,6 @@
-<header id="header">      
-        <div class="container">
+<body>
+	<header id="header">      
+        {{--<div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
                    <div class="social-icons pull-right">
@@ -13,7 +14,7 @@
                     </div> 
                 </div>
              </div>
-        </div>
+        </div>--}}
         <div class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -43,7 +44,7 @@
                                 <li><a href="404.html">404 error</a></li>
                                 <li><a href="coming-soon.html">Coming Soon</a></li>
                             </ul>
-                        </li>                  
+                        </li>                    
                         <li class="dropdown"><a href="blog.html">Blog <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="blog.html">Blog Default</a></li>
@@ -67,14 +68,15 @@
                         <li><a href="shortcodes.html ">Shortcodes</a></li>                    
                     </ul>
                 </div>
-                <div class="search">
+                {{--<div class="search">
                     <form role="form">
                         <i class="fa fa-search"></i>
                         <div class="field-toggle">
                             <input type="text" class="search-form" autocomplete="off" placeholder="Search">
                         </div>
                     </form>
-                </div>
+                </div>--}}
             </div>
         </div>
     </header>
+    <!--/#header-->
