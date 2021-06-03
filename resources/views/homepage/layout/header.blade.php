@@ -25,17 +25,17 @@
                         <span class="icon-bar"></span>
                     </button>
 
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{{ url('/')}}">
                     	<h1><img width="50px" src="https://qazwa.id/blog/wp-content/uploads/2020/02/Logo-Tutwuri-Handayani..png" alt="logo"></h1>
                     </a>
                     
                 </div>
                 <div class="collapse navbar-collapse"> 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Tentang</a></li>
-                        <li><a href="#">Berita</a></li>
-                        <li><a href="#">Akademik</a></li>
-                        <li><a href="#">Event</a></li>
+                        <li><a href="{{ url('/tentang')}}">Tentang</a></li>
+                        <li><a href="{{ url('/berita')}}">Berita</a></li>
+                        <li><a href="{{ url('/akademik')}}">Akademik</a></li>
+                        <li><a href="{{ url('/event')}}">Event</a></li>
                         <li class="btn-login"><a href="#"><button type="button" class="btn btn-info">LOGIN</button></a></li>
                         {{--<li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">

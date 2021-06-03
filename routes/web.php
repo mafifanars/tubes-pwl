@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 //Homepage
 Route::get('/', function () {return view('homepage\index');});
+Route::get('/tentang', function () {return view('homepage\pages\tentang');});
