@@ -191,7 +191,7 @@
         padding: 30px 0;
     }
     #header {
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         padding-top: 10px;
         background: #fff;
         position: sticky;
@@ -254,7 +254,7 @@
         margin: 50px 20px;
     }
     #home-slider .main-slider {
-        height: 500px;
+        height: 480px;
     }
     #home-slider .slide-text {
         top: 0;

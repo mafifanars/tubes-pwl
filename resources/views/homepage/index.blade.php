@@ -7,9 +7,9 @@
             <div class="row">
                 <div class="main-slider">
                     <div class="slide-text">
-                        <h1>We Are Creative Nerds</h1>
-                        <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                        <a href="#action" class="btn btn-common">SIGN UP</a>
+                        <h1>SMA Harapan Bangsa</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem harum eum! Temporibus, aperiam numquam enim dolore nam ratione quae expedita id reprehenderit beatae voluptas, quisquam, mollitia exercitationem dolorum sequi.</p>
+                        <a href="#services" class="btn btn-common">Lihat Selengkapnya</a>
                     </div>
                     <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
                     <img src="images/home/slider/house.png" class="slider-house" alt="slider image">

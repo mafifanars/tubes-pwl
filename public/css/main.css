@@ -167,7 +167,7 @@
 
 #header{
   margin-bottom: 0;
-  padding: 30px 0 60px 0;
+  padding: 30px 0 12px 0;
   position: fixed;
   top: 0;
   background: #fff;
@@ -291,7 +291,16 @@
   text-transform: uppercase;
   font-weight: 300;
 }
-
+#header .navbar-nav.navbar-right >li a button {
+  padding-top: 5px;
+  padding-bottom: 2px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  border-radius: 100px;
+  font-family: sans-serif;
+  font-size: 13px;
+  outline: none;
+}
 
 #header .navbar-inverse .navbar-nav  li.active > a,  
 #header .navbar-inverse .navbar-nav  li.active > a:focus, 
@@ -315,7 +324,6 @@ ul.sub-menu {
   padding: 0;
   margin: 0;
 }
-
 #header .navbar-nav li ul.sub-menu li a{
   color: #818285;
   padding: 5px 0;
@@ -551,12 +559,12 @@ ul.sub-menu {
 
 #home-slider .main-slider {
   position: relative;
-  height: 450px;
+  height: 680px;
 }
 
 #home-slider .slide-text{
   position: absolute;
-  top: 50px;
+  top: 150px;
   left: 0;
   width: 450px;
 }

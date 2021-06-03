@@ -26,14 +26,18 @@
                     </button>
 
                     <a class="navbar-brand" href="index.html">
-                    	<h1><img src="images/logo.png" alt="logo"></h1>
+                    	<h1><img width="50px" src="https://qazwa.id/blog/wp-content/uploads/2020/02/Logo-Tutwuri-Handayani..png" alt="logo"></h1>
                     </a>
                     
                 </div>
-                <div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse"> 
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
+                        <li><a href="#">Tentang</a></li>
+                        <li><a href="#">Berita</a></li>
+                        <li><a href="#">Akademik</a></li>
+                        <li><a href="#">Event</a></li>
+                        <li class="btn-login"><a href="#"><button type="button" class="btn btn-info">LOGIN</button></a></li>
+                        {{--<li class="dropdown"><a href="#">Pages <i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="aboutus.html">About</a></li>
                                 <li><a href="aboutus2.html">About 2</a></li>
@@ -64,8 +68,8 @@
                                 <li><a href="portfoliothree.html">2 Columns</a></li>
                                 <li><a href="portfolio-details.html">Portfolio Details</a></li>
                             </ul>
-                        </li>                         
-                        <li><a href="shortcodes.html ">Shortcodes</a></li>                    
+                        </li>           
+                        <li><a href="shortcodes.html ">Shortcodes</a></li>--}}                    
                     </ul>
                 </div>
                 {{--<div class="search">
