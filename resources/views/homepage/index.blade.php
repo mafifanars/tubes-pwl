@@ -2,56 +2,29 @@
 
 @include('homepage.layout.header')
 
-    <section id="home-slider">
+   <section id="home-slider">
         <div class="container">
-            <div class="row">
-                <div class="main-slider">
-                    <div class="slide-text">
-                        <h1>SMA Negeri X</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatem harum eum! Temporibus, aperiam numquam enim dolore nam ratione quae expedita id reprehenderit beatae voluptas, quisquam, mollitia exercitationem dolorum sequi.</p>
-                        <a href="#services" class="btn btn-common">Lihat Selengkapnya</a>
-                    </div>
-                    <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
-                    <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
-                    <img src="images/home/slider/sun.png" class="slider-sun" alt="slider image">
-                    <img src="images/home/slider/birds1.png" class="slider-birds1" alt="slider image">
-                    <img src="images/home/slider/birds2.png" class="slider-birds2" alt="slider image">
+            <div class="main-slider">
+                <div class="slide-text">
+                    <h1>SMA Harapan Bangsa</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem deleniti praesentium aliquam, consequuntur quod quaerat. Perspiciatis eveniet molestiae voluptate esse, consequuntur, voluptatem odit aliquid debitis, temporibus voluptatibus reiciendis suscipit cupiditate.</p>
+                    <a href="#" class="btn btn-common">Lihat Selengkapnya</a>
                 </div>
+                {{--<img src="images/home/slider/slide1/house.png" class="img-responsive slider-house" alt="slider image">
+                <img src="images/home/flag.gif" class="slider-circle1" alt="slider image">
+                <img src="{images/home/slider/slide1/circle2.png" class="slider-circle2" alt="slider image">
+                <img src="images/home/slider/slide1/cloud1.png" class="slider-cloud1" alt="slider image">
+                <img src="images/home/flag.gif" class="slider-cloud2" alt="slider image">--}}
+                <img src="{{ asset('assets/images/home/flag.gif')}}" class="slider-cloud3" alt="slider image">
+                {{--<img src="images/home/slider/slide1/sun.png" class="slider-sun" alt="slider image">--}}
+                <img src="{{ asset('assets/images/home/cycle.png')}}" class="slider-cycle" alt="">
             </div>
         </div>
         <div class="preloader"><i class="fa fa-sun-o fa-spin"></i></div>
     </section>
     <!--/#home-slider-->
 
-    {{--<section id="action">
-        <div class="vertical-center">
-             <div class="container">
-                <div class="row">
-                    <div class="action count">
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="150" data-speed="3000" data-from="0"></h1>   
-                            <h3>Guru Terdaftar</h3>
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="1500" data-speed="3000" data-from="0"></h1>   
-                            <h3>Siswa Terdaftar</h3> 
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="4" data-speed="3000" data-from="0"></h1> 
-                            <h3>Jurusan</h3>
-                        </div>
-                        <div class="col-sm-3 text-center wow bounceIn" data-wow-duration="1000ms" data-wow-delay="300ms">
-                            <h1 class="timer bold" data-to="1" data-speed="3000" data-from="0"></h1> 
-                            <h3>Almamater</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-   </section>
-    <!--/#action-->--}}
-
-    <section id="services">
+    {{--<section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
@@ -83,31 +56,94 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
     <!--/#services-->
 
-    <section id="action" class="responsive">
+    <section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Ikuti Berita Kegiatan Terbaru Kami.</h2>
+							<p>Lihat berita kegiatan terupdate kami disini.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="{{ url('img/blog1.jpg')}}" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">22 Aug, 2020</div>
+									<h2><a href="blog-single.html">Ini adalah berita, berita, berita dan berita</a></h2>
+									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog2.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">15 Jul, 2020</div>
+									<h2><a href="blog-single.html">Ini adalah berita, berita, berita dan berita</a></h2>
+									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/blog3.jpg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="blog-single.html">Ini adalah berita, berita, berita dan berita</a></h2>
+									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+    {{--<section id="action" class="responsive">
         <div class="vertical-center">
              <div class="container">
                 <div class="row">
                     <div class="action take-tour">
                         <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h1 class="title">Triangle Corporate Template</h1>
-                            <p>A responsive, retina-ready &amp; wide multipurpose template.</p>
+                            <h1 class="title">Ada Kendala Ketika Login?</h1>
+                            <p>Kunjungi Halaman Frequently Asked Question.</p>
                         </div>
                         <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                             <div class="tour-button">
-                                <a href="#" class="btn btn-common">TAKE THE TOUR</a>
+                                <a href="{{ url('/faq')}}" class="btn btn-common">FAQ</a>
                              </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-   </section>
+   </section>--}}
     <!--/#action-->
 
-    <section id="features">
+    {{--<section id="features">
         <div class="container">
             <div class="row">
                 <div class="single-features">
@@ -139,7 +175,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
      <!--/#features-->
 
     <section id="clients">
@@ -148,27 +184,27 @@
                 <div class="col-sm-12">
                     <div class="clients text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                         <p><img src="images/home/clients.png" class="img-responsive" alt=""></p>
-                        <h1 class="title">Happy Clients</h1>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud </p>
+                        <h1 class="title">Ekstrakurikuler</h1>
+                        <p>Lihat ekstrakurikuler kami disini. </p>
                     </div>
                     <div class="clients-logo wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client1.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client1.png')}}" class="img-responsive" alt=""></a>
                         </div>
                         <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client2.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client2.png')}}" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client3.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client3.png')}}" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client4.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client4.png')}}" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client5.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client5.png')}}" class="img-responsive" alt=""></a>
                         </div>
                          <div class="col-xs-3 col-sm-2">
-                            <a href="#"><img src="images/home/client6.png" class="img-responsive" alt=""></a>
+                            <a href="#"><img src="{{ asset('assets/images/home/client6.png')}}" class="img-responsive" alt=""></a>
                         </div>
                     </div>
                 </div>
