@@ -22,7 +22,8 @@
                 <div class="col-md-7 m-auto">
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <form action="{{ url('/portal/daftar') }}" method="POST">
+                            <form action="{{ route('register')}}" method="POST">
+                                @csrf
                                 <div class="form-row mb-3">
                                     <div class="col-12 mb-3">
                                         <label for="name">Nama Lengkap</label>

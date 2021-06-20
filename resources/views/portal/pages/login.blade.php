@@ -20,7 +20,8 @@
                 <div class="col-md-4 m-auto">
                     <div class="main-card mb-3 card">
                         <div class="card-body">
-                            <form action="{{ url('/portal/login') }}" method="POST">
+                            <form action="{{ route('login')}}" method="POST">
+                                @csrf
                                 <div class="form-row">
                                     <div class="col-12 mb-3">
                                         <label for="email">Email</label>

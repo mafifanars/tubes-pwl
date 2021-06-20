@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,11 +15,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 //Homepage
-Route::get('/', function () {return view('homepage.index');});
-Route::get('/tentang', function () {return view('homepage.tentang.tentang');});
-Route::get('/berita', function () {return view('homepage.berita.berita');});
-Route::get('/akademik', function () {return view('homepage.akademik.akademik');});   
-Route::get('/event', function () {return view('homepage.acara.acara');});   
-Route::get('/portal', function () {return view('portal.pages.login');});
-Route::get('/portal/daftar', function () {return view('portal.pages.daftar');});
-Route::get('/portal/daftar', function () {return view('portal.pages.daftar');});
+Route::view('/', 'homepage.index');
+Route::view('/', 'homepage.tentang.tentang');
+Route::view('/', 'homepage.berita.berita');
+Route::view('/', 'homepage.akademik.akademik');
+Route::view('/', 'homepage.acara.acara');
+Route::view('/', 'homepage.index');
+
+//Portal
+Route::get('/portal', [AuthController::class, 'getLogin']);
+Route::post('/portal', [AuthController::class, 'postLogin'])->name('login');
+Route::get('/portal/daftar', [AuthController::class, 'getRegister']);
+Route::post('/portal/daftar', [AuthController::class, 'postRegister'])->name('register');
