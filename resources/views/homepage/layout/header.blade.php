@@ -35,7 +35,7 @@
                         <li><a href="{{ url('/tentang')}}">Tentang</a></li>
                         <li><a href="{{ url('/berita')}}">Berita</a></li>
                         <li><a href="{{ url('/akademik')}}">Akademik</a></li>
-                        <li><a href="{{ url('/event')}}">Acara</a></li>
+                        <li><a href="{{ url('/acara')}}">Acara</a></li>
                         <li class="btn-login"><a href="{{ url('/portal')}}"><button type="button" class="btn btn-info">LOGIN</button></a></li>                
                     </ul>
                 </div>

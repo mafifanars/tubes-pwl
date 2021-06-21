@@ -16,11 +16,10 @@ use App\Http\Controllers\AuthController;
 
 //Homepage
 Route::view('/', 'homepage.index');
-Route::view('/', 'homepage.tentang.tentang');
-Route::view('/', 'homepage.berita.berita');
-Route::view('/', 'homepage.akademik.akademik');
-Route::view('/', 'homepage.acara.acara');
-Route::view('/', 'homepage.index');
+Route::view('/tentang', 'homepage.tentang.tentang');
+Route::view('/berita', 'homepage.berita.berita');
+Route::view('/akademik', 'homepage.akademik.akademik');
+Route::view('/acara', 'homepage.acara.acara');
 
 //Portal
 Route::get('/portal', [AuthController::class, 'getLogin']);
