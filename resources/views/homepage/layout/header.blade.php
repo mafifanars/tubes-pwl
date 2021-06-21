@@ -36,6 +36,7 @@
                         <li><a href="{{ url('/berita')}}">Berita</a></li>
                         <li><a href="{{ url('/akademik')}}">Akademik</a></li>
                         <li><a href="{{ url('/acara')}}">Acara</a></li>
+<<<<<<< HEAD
                         <li>
 		                    @if(Auth::check())
 		                        <a href="{{ url('/home') }}">
@@ -52,6 +53,9 @@
                                 </a>
 		                    @endif
 		                </li>
+=======
+                        <li class="btn-login"><a href="{{ url('/portal')}}"><button type="button" class="btn btn-info">LOGIN</button></a></li>                
+>>>>>>> b3211ee48d1a7d15e3ef0ed73ab10fac89aac8c2
                     </ul>
                 </div>
             </div>
