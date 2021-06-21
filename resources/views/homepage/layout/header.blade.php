@@ -35,8 +35,23 @@
                         <li><a href="{{ url('/tentang')}}">Tentang</a></li>
                         <li><a href="{{ url('/berita')}}">Berita</a></li>
                         <li><a href="{{ url('/akademik')}}">Akademik</a></li>
-                        <li><a href="{{ url('/event')}}">Acara</a></li>
-                        <li class="btn-login"><a href="{{ url('/portal')}}"><button type="button" class="btn btn-info">LOGIN</button></a></li>                
+                        <li><a href="{{ url('/acara')}}">Acara</a></li>
+                        <li>
+		                    @if(Auth::check())
+		                        <a href="{{ url('/home') }}">
+                                    <button type="button" class="btn btn-info">
+		                            <!-- <img src="{{ Auth::user()->photo_url }}" class="rounded mr-2" width="30" alt="0"> -->
+		                            {{ Auth::user()->name }}
+                                    </button>
+                                </a>
+		                    @else
+		                        <a href="{{ url('/login') }}">
+                                    <button type="button" class="btn btn-info">
+                                        LOGIN
+                                    </button>
+                                </a>
+		                    @endif
+		                </li>
                     </ul>
                 </div>
             </div>

@@ -1,4 +1,9 @@
-@include('portal.layout.head')
+@extends('portal.layout.auth')
+
+@include('portal.layout.headauth')
+
+@section('content')
+
 <div class="container login vw-100">
     <div class="row vh-100 mt-4">
         <div class="col m-auto">
@@ -24,19 +29,32 @@
                                 @csrf
                                 <div class="form-row">
                                     <div class="col-12 mb-3">
-                                        <label for="email">Email</label>
-                                        <input name="email" type="text" class="form-control" id="email" required maxlength="64" />
+                                        <label for="email">Email / NIS / NIP</label>
+                                        <input id="email" type="text" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
+
                                     <div class="col-12 mb-3">
                                         <label for="password">Password</label>
-                                        <input name="password" type="password" class="form-control" id="password" required minlength="8" maxlength="16" />
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                         <p class="w-100 text-right mb-0 mt-2">
                                             <a class="mt-2" href="{{ url('/portal/lupa-password') }}">Lupa Password?</a>
                                         </p>
                                     </div>
                                 </div>
                                 <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                                <p class="text-center mt-2 w-100">Belum punya akun? <a href="{{ url('/portal/daftar') }}">Daftar di sini</a></p>
+                                <p class="text-center mt-2 w-100">Belum punya akun? <a href="{{ url('/register') }}">Daftar di sini</a></p>
                             </form>
                         </div>
                     </div>
@@ -45,6 +63,4 @@
         </div>
     </div>
 </div>
-
-
-@include('portal.layout.foot')
+@endsection

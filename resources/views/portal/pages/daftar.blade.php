@@ -1,5 +1,7 @@
 @extends('portal.layout.auth')
 
+@include('portal.layout.headauth')
+
 @section('content')
 <div class="container login vw-100">
     <div class="row vh-100 mt-4">
@@ -27,24 +29,45 @@
                                 <div class="form-row mb-3">
                                     <div class="col-12 mb-3">
                                         <label for="name">Nama Lengkap</label>
-                                        <input type="text" name="name" class="form-control" id="name" required maxlength="255" minlength="3" />
+                                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
+
                                     <div class="col-12 mb-3">
                                         <label for="email">Email</label>
-                                        <input type="email" name="email" class="form-control" id="email" required maxlength="64" />
+                                        <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                        @error('email')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
+
                                     <div class="col-md-6 mb-3">
                                         <label for="password">Password</label>
-                                        <input type="password" name="password" class="form-control" id="password" required minlength="8" maxlength="16" />
+                                        <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+
+                                        @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
                                     </div>
+
                                     <div class="col-md-6 mb-3">
                                         <label for="confirm-password">Konfirmasi Password</label>
-                                        <input type="password" name="confirm_password" class="form-control" id="confirm-password" required minlength="8" maxlength="16" />
+                                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                                         <div class="feedback"></div>
                                     </div>
                                 </div>
                                 <button class="btn btn-lg btn-primary btn-block" type="submit" id="submit">Daftar</button>
-                                <p class="text-center mt-2 w-100">Sudah punya akun? <a href="{{ url('/portal') }}">Login di sini</a></p>
+                                <p class="text-center mt-2 w-100">Sudah punya akun? <a href="{{ url('/login') }}">Login di sini</a></p>
                             </form>
                         </div>
                     </div>
