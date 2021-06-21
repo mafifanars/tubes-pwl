@@ -8,8 +8,8 @@
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">Tentang</h1>
-                            <p>SMA Harapan Bangsa adalah sekolah yang mempokuskan para siswanya dalam pengembangan skills.</p>
+                            <h1 class="title">Sejarah Singkat</h1>
+                            <p>Dibentuknya SMA Harapan Bangsa berawal dari keprihatinan para pendiri sekolah mengenai kurang tersalurnya bakat dan keahlian masyarakat, dan ditambah pula kurangnya sekolah yang memadai baik dalam segi infrastruktur maupun tenaga pengajar profesional. Sehingga dengan demikian para pendiri memutuskan untuk membangun sekolah yang terletak di Komplek Bumi Raya, Sumatera Utara. Dengan diberikan fasilitas yang memadai dan ekstrakulikuler yang diharapkan dapat membantu dalam pengembangan para siswa, maka diharapkan nantinya bakat dan keahlian para siswa dapat tersalur dengan baik dan para siswa berkembang menjadi individu yang kreatif dan inovatif sehingga dapat membantu perkembangan negara. </p>
                         </div>
                      </div>
                 </div>
@@ -25,8 +25,9 @@
                     <img src="{{ asset('assets/images/aboutus/1.png')}}" class="img-responsive" alt="">
                 </div>
                 <div class="col-sm-6 padding-top">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque nesciunt consequatur maiores, eum sed illum repellendus ullam explicabo aspernatur?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cumque nesciunt consequatur maiores, eum sed illum repellendus ullam explicabo aspernatur?</p>
+                    <h1 class="title">Visi Dan Misi</h1>
+                    <p>Visi SMA Harapan  Bangsa adalah untuk menjadi sekolah yang unggul dalam prestasi dan dapat melaksanakn pengajaran dengan standar tinggi yang dibantu oeh  para tenaga pengajar yang mumpuni, dan juga menjadi sekolah yang ramah bagi para siswa serta peduli pada lingkungan.</p>
+                    <p>Misi SMA Harapan Bangsa adalah membantu murid untuk menjadi disiplin, berbudi luhur, berbudi pekerti, dan pekerja keras. Sekolah berkomitmen untuk melaksanakan pendidikan yang efektif dan kreatif. Dengan berkembangnya IPTEKK maka sekolah akan berusaha secara masimal untuk melengkapi sarana fasilitas guna menunjang perkembanagn keahlian  siswa. Sekolah juga berusaha untuk meningkatkan kegiatan kesenian dan budaya cinta lingkunagn kepada siswa.</p>
                 </div>
             </div>
         </div>
